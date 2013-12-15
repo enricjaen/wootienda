@@ -1,0 +1,6 @@
+[12-Nov-2013 18:38:14] PHP Fatal error:  Call to undefined function  get_header() in /home2/oneguauc/public_html/balearsemplea/tienda/wp-content/themes/balitawoo/index.php on line 3
+[13-Nov-2013 03:28:26] PHP Fatal error:  Call to undefined function  get_header() in /home2/oneguauc/public_html/balearsemplea/tienda/wp-content/themes/balitawoo/index.php on line 3
+[13-Nov-2013 09:16:43] PHP Fatal error:  Call to undefined function  get_header() in /home2/oneguauc/public_html/balearsemplea/tienda/wp-content/themes/balitawoo/index.php on line 3
+[13-Nov-2013 11:59:55] PHP Fatal error:  Call to undefined function  get_header() in /home2/oneguauc/public_html/balearsemplea/tienda/wp-content/themes/balitawoo/index.php on line 3
+[13-Nov-2013 14:13:42] PHP Fatal error:  Call to undefined function  get_header() in /home2/oneguauc/public_html/balearsemplea/tienda/wp-content/themes/balitawoo/index.php on line 3
+[13-Nov-2013 16:10:06] PHP Fatal error:  Call to undefined function  get_header() in /home2/oneguauc/public_html/balearsemplea/tienda/wp-content/themes/balitawoo/index.php on line 3

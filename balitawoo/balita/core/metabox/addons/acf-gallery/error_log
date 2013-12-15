@@ -1,0 +1,8 @@
+[13-Nov-2013 00:13:39] PHP Fatal error:  Call to undefined function  plugin_basename() in /home2/oneguauc/public_html/balearsemplea/tienda/wp-content/themes/balitawoo/core/metabox/addons/acf-gallery/acf-gallery.php on line 31
+[13-Nov-2013 00:21:52] PHP Fatal error:  Class 'acf_field' not found in /home2/oneguauc/public_html/balearsemplea/tienda/wp-content/themes/balitawoo/core/metabox/addons/acf-gallery/gallery.php on line 3
+[13-Nov-2013 15:16:40] PHP Fatal error:  Call to undefined function  plugin_basename() in /home2/oneguauc/public_html/balearsemplea/tienda/wp-content/themes/balitawoo/core/metabox/addons/acf-gallery/acf-gallery.php on line 31
+[13-Nov-2013 15:27:00] PHP Fatal error:  Class 'acf_field' not found in /home2/oneguauc/public_html/balearsemplea/tienda/wp-content/themes/balitawoo/core/metabox/addons/acf-gallery/gallery.php on line 3
+[13-Nov-2013 20:56:04] PHP Fatal error:  Call to undefined function  plugin_basename() in /home2/oneguauc/public_html/balearsemplea/tienda/wp-content/themes/balitawoo/core/metabox/addons/acf-gallery/acf-gallery.php on line 31
+[13-Nov-2013 20:58:34] PHP Fatal error:  Class 'acf_field' not found in /home2/oneguauc/public_html/balearsemplea/tienda/wp-content/themes/balitawoo/core/metabox/addons/acf-gallery/gallery.php on line 3
+[13-Nov-2013 21:03:46] PHP Fatal error:  Call to undefined function  plugin_basename() in /home2/oneguauc/public_html/balearsemplea/tienda/wp-content/themes/balitawoo/core/metabox/addons/acf-gallery/acf-gallery.php on line 31
+[13-Nov-2013 21:04:39] PHP Fatal error:  Class 'acf_field' not found in /home2/oneguauc/public_html/balearsemplea/tienda/wp-content/themes/balitawoo/core/metabox/addons/acf-gallery/gallery.php on line 3

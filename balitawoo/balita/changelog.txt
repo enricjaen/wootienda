@@ -1,0 +1,14 @@
+2013-11-06 - 1.2
+  - Add responsive support
+  
+2013-09-20 - 1.1.1
+  - Update the screenshot
+  - Fixing author box
+  - Styling slider in page template Blog-ii
+  - Update contact style. 
+
+2013-08-24 1.1
+  - Minor Update
+  
+2013-07-29 1.0
+  - Initial released

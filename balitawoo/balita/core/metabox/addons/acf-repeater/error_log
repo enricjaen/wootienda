@@ -1,0 +1,6 @@
+[13-Nov-2013 00:15:41] PHP Fatal error:  Call to undefined function  plugin_basename() in /home2/oneguauc/public_html/balearsemplea/tienda/wp-content/themes/balitawoo/core/metabox/addons/acf-repeater/acf-repeater.php on line 33
+[13-Nov-2013 00:17:56] PHP Fatal error:  Class 'acf_field' not found in /home2/oneguauc/public_html/balearsemplea/tienda/wp-content/themes/balitawoo/core/metabox/addons/acf-repeater/repeater.php on line 3
+[13-Nov-2013 15:23:46] PHP Fatal error:  Call to undefined function  plugin_basename() in /home2/oneguauc/public_html/balearsemplea/tienda/wp-content/themes/balitawoo/core/metabox/addons/acf-repeater/acf-repeater.php on line 33
+[13-Nov-2013 15:25:06] PHP Fatal error:  Class 'acf_field' not found in /home2/oneguauc/public_html/balearsemplea/tienda/wp-content/themes/balitawoo/core/metabox/addons/acf-repeater/repeater.php on line 3
+[13-Nov-2013 21:02:14] PHP Fatal error:  Call to undefined function  plugin_basename() in /home2/oneguauc/public_html/balearsemplea/tienda/wp-content/themes/balitawoo/core/metabox/addons/acf-repeater/acf-repeater.php on line 33
+[13-Nov-2013 21:03:34] PHP Fatal error:  Class 'acf_field' not found in /home2/oneguauc/public_html/balearsemplea/tienda/wp-content/themes/balitawoo/core/metabox/addons/acf-repeater/repeater.php on line 3
