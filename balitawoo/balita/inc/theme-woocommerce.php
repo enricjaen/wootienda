@@ -32,7 +32,7 @@ if ( class_exists( 'woocommerce' ) ) {
 			<div class="cartbox">
 				<div class="cartbox-top">
 					<span class="this-arrow">arrow</span>
-					<h3>Shopping Cart</h3>
+					<h3><?php _e('Shopping Cart','tokokoo') ?></h3>
 					<p class="stat">
 						<?php echo sprintf(_n('%d Item', '%d Items', $woocommerce->cart->cart_contents_count, 'tokokoo'), $woocommerce->cart->cart_contents_count);?> <span>|</span> <?php echo $woocommerce->cart->get_cart_subtotal(); ?>
 					</p>

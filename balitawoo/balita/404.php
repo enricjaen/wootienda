@@ -25,5 +25,5 @@ get_header();
 
 <?php 
 	// Loads the footer.php template.
-	get_footer();  
+	get_footer(); 
 ?>

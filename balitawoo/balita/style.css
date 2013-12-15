@@ -2,7 +2,7 @@
 Theme Name:	Balita
 Theme URI: http://tokokoo.com
 Description: Baby and Kid shop
-Version: 1.2
+Version: 1.2.1
 Author: Tokokoo
 Author URI: http://tokokoo.com
 Tags:
@@ -1189,6 +1189,21 @@ object {
 /*------------------------------------*\
 	$HEADER
 \*------------------------------------*/
+/* line 1, sass/template/_header.scss */
+.trigger-menu {
+  width: 90%;
+  height: 40px;
+  margin: auto;
+  background: #898F2A;
+  text-align: center;
+  display: none;
+  color: white;
+  cursor: pointer;
+  line-height: 40px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
 /*------------------------------------*\
 	$BODY
 \*------------------------------------*/
@@ -3770,6 +3785,15 @@ ul.tabswidget li a {
 /*------------------------------------*\
 	$PAGE_TEMPLATES
 \*------------------------------------*/
+/* line 2, sass/template/_page-templates.scss */
+.page-product .product {
+  margin: 30px;
+}
+/* line 8, sass/template/_page-templates.scss */
+.page-product .first {
+  margin-right: 30px;
+}
+
 /*------------------------------------*\
 	$WOO_PRODUCTS
 \*------------------------------------*/
@@ -4401,3 +4425,481 @@ tr.total td strong {
 /*------------------------------------*\
 	$BBPRESS
 \*------------------------------------*/
+@media only screen and (max-width: 1024px) {
+  /* line 3, sass/responsive/_responsive.scss */
+  #container {
+    width: 100%;
+  }
+
+  /* line 11, sass/responsive/_responsive.scss */
+  #main .slider-wrapper {
+    height: auto;
+  }
+  /* line 14, sass/responsive/_responsive.scss */
+  #main .nivo-caption {
+    margin-top: 40px;
+    margin-left: 40px;
+  }
+  /* line 18, sass/responsive/_responsive.scss */
+  #main .nivo-controlNav {
+    margin-left: 40px;
+    margin-top: -160px;
+  }
+  /* line 22, sass/responsive/_responsive.scss */
+  #main .prolog {
+    margin-top: -10px;
+  }
+  /* line 25, sass/responsive/_responsive.scss */
+  #main .slides_container {
+    width: 790px;
+  }
+  /* line 30, sass/responsive/_responsive.scss */
+  #main .feat {
+    width: 210px;
+  }
+  /* line 32, sass/responsive/_responsive.scss */
+  #main .feat img {
+    width: 210px;
+  }
+
+  /* line 40, sass/responsive/_responsive.scss */
+  .has-sidebar {
+    width: 90%;
+    float: none;
+    margin: 40px auto;
+  }
+
+  /* line 45, sass/responsive/_responsive.scss */
+  .sidebar {
+    float: none;
+    margin: 20px auto;
+    width: 90%;
+  }
+
+  /* line 50, sass/responsive/_responsive.scss */
+  .widget_tp_widget_recent_tweets {
+    min-height: 400px;
+  }
+
+  /* line 54, sass/responsive/_responsive.scss */
+  .fb-like iframe {
+    width: 600px;
+  }
+
+  /* line 60, sass/responsive/_responsive.scss */
+  .no-sidebar {
+    width: 97%;
+    margin: 40px auto;
+  }
+
+  /* line 65, sass/responsive/_responsive.scss */
+  .no-sidebar2 {
+    margin: 40px auto;
+    width: 97%;
+  }
+
+  /* line 70, sass/responsive/_responsive.scss */
+  .two-column {
+    margin: 40px auto;
+    width: 97%;
+  }
+  /* line 73, sass/responsive/_responsive.scss */
+  .two-column .postleft {
+    display: auto;
+    width: 45%;
+    float: left;
+  }
+  /* line 78, sass/responsive/_responsive.scss */
+  .two-column .postright {
+    display: auto;
+    width: 45%;
+    float: right;
+  }
+
+  /* line 87, sass/responsive/_responsive.scss */
+  #colophon .widget {
+    width: 210px;
+  }
+
+  /* line 92, sass/responsive/_responsive.scss */
+  #foot {
+    display: none;
+  }
+
+  /* line 96, sass/responsive/_responsive.scss */
+  .foot .w1170 {
+    margin: auto;
+    display: block;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  /* line 106, sass/responsive/_responsive.scss */
+  #headbanner {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  /* line 112, sass/responsive/_responsive.scss */
+  #masthead .cartbox {
+    top: 10px;
+  }
+  /* line 115, sass/responsive/_responsive.scss */
+  #masthead #loginsearch {
+    float: right;
+    width: 90%;
+  }
+
+  /* line 121, sass/responsive/_responsive.scss */
+  #main .nivo-controlNav {
+    margin-left: 40px;
+    margin-top: -70px;
+  }
+  /* line 125, sass/responsive/_responsive.scss */
+  #main .prolog {
+    font-size: 12px;
+  }
+  /* line 128, sass/responsive/_responsive.scss */
+  #main .slides_container {
+    width: 560px;
+  }
+  /* line 131, sass/responsive/_responsive.scss */
+  #main .feat-wrapper {
+    width: 600px;
+    margin: auto;
+  }
+  /* line 134, sass/responsive/_responsive.scss */
+  #main .feat-wrapper .feat {
+    width: 250px;
+  }
+  /* line 137, sass/responsive/_responsive.scss */
+  #main .feat-wrapper .feat img {
+    width: 250px;
+  }
+
+  /* line 145, sass/responsive/_responsive.scss */
+  .foter-widget-wrapper {
+    width: 600px;
+    margin: auto;
+  }
+
+  /* line 149, sass/responsive/_responsive.scss */
+  #colophon .widget {
+    width: 260px;
+  }
+
+  /* line 155, sass/responsive/_responsive.scss */
+  .page-archive .col {
+    display: block;
+    width: 45%;
+    float: left;
+  }
+
+  /* line 161, sass/responsive/_responsive.scss */
+  .no-sidebar2 {
+    margin: 40px auto;
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 568px) {
+  /* line 172, sass/responsive/_responsive.scss */
+  #masthead #logo {
+    width: 250px;
+    float: none;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 179, sass/responsive/_responsive.scss */
+  #masthead .cartbox {
+    display: none;
+  }
+
+  /* line 185, sass/responsive/_responsive.scss */
+  #main .slider-wrapper {
+    display: none;
+  }
+  /* line 188, sass/responsive/_responsive.scss */
+  #main .slides_container {
+    width: 400px;
+  }
+  /* line 191, sass/responsive/_responsive.scss */
+  #main .prolog {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    line-height: 30px;
+    font-size: 15px;
+  }
+  /* line 197, sass/responsive/_responsive.scss */
+  #main .prolog .btn2 {
+    margin-top: 10px;
+  }
+  /* line 201, sass/responsive/_responsive.scss */
+  #main .feat-wrapper {
+    width: 100%;
+    margin: auto;
+  }
+  /* line 204, sass/responsive/_responsive.scss */
+  #main .feat-wrapper .feat {
+    width: 240px;
+  }
+  /* line 206, sass/responsive/_responsive.scss */
+  #main .feat-wrapper .feat img {
+    width: 240px;
+  }
+
+  /* line 214, sass/responsive/_responsive.scss */
+  #colophon .foter-widget-wrapper {
+    width: 100%;
+    margin: auto;
+  }
+  /* line 218, sass/responsive/_responsive.scss */
+  #colophon .widget {
+    width: 90%;
+  }
+
+  /* line 224, sass/responsive/_responsive.scss */
+  .page-contact .desc {
+    width: auto;
+    float: left;
+  }
+
+  /* line 234, sass/responsive/_responsive.scss */
+  .produkimg {
+    float: none;
+    display: block;
+    width: 280px;
+    margin: auto;
+  }
+  /* line 239, sass/responsive/_responsive.scss */
+  .produkimg .page-product .item {
+    margin-top: 20px;
+    margin-left: 0;
+  }
+  /* line 243, sass/responsive/_responsive.scss */
+  .produkimg .slides_container div.slide {
+    width: 100%;
+  }
+  /* line 246, sass/responsive/_responsive.scss */
+  .produkimg .page-product .item {
+    margin-top: 20px;
+    margin-left: 0;
+  }
+
+  /* line 252, sass/responsive/_responsive.scss */
+  .produktxt {
+    display: block;
+    float: none;
+    width: 80%;
+  }
+  /* line 256, sass/responsive/_responsive.scss */
+  .produktxt p {
+    width: 510px;
+  }
+
+  /* line 264, sass/responsive/_responsive.scss */
+  .totalcart {
+    display: block;
+    float: none;
+    width: auto;
+  }
+
+  /* line 269, sass/responsive/_responsive.scss */
+  .woocommerce-cart .cart .actions .coupon {
+    display: block;
+    float: none;
+    width: auto;
+    margin-bottom: 20px;
+  }
+
+  /* line 276, sass/responsive/_responsive.scss */
+  .cart .button {
+    margin-left: 0;
+  }
+
+  /* line 280, sass/responsive/_responsive.scss */
+  .woocommerce-cart .cart .actions input[name="update_cart"], .woocommerce-cart .cart .actions input[name="proceed"] {
+    margin-left: 0;
+  }
+}
+@media only screen and (max-width: 320px) {
+  /* line 293, sass/responsive/_responsive.scss */
+  #headbanner p {
+    display: none;
+  }
+
+  /* line 297, sass/responsive/_responsive.scss */
+  .menu li.current-menu-item a, .menu li.runing a {
+    border-radius: 4px;
+    background-color: #491E11;
+  }
+
+  /* line 301, sass/responsive/_responsive.scss */
+  #masthead {
+    padding: 10px 0 20px 0;
+  }
+  /* line 303, sass/responsive/_responsive.scss */
+  #masthead .cartbox {
+    display: none;
+  }
+  /* line 306, sass/responsive/_responsive.scss */
+  #masthead #logo {
+    margin-top: 0;
+  }
+  /* line 309, sass/responsive/_responsive.scss */
+  #masthead #loginsearch {
+    float: none;
+    width: 80%;
+    margin: auto;
+  }
+  /* line 313, sass/responsive/_responsive.scss */
+  #masthead #loginsearch .loginmenu {
+    width: 130px;
+    float: none;
+    margin: auto;
+  }
+  /* line 318, sass/responsive/_responsive.scss */
+  #masthead #loginsearch #searchform {
+    margin: auto;
+    width: 190px;
+    float: none;
+  }
+  /* line 322, sass/responsive/_responsive.scss */
+  #masthead #loginsearch #searchform #searchsubmit {
+    width: 100%;
+    margin: 20px auto;
+  }
+  /* line 328, sass/responsive/_responsive.scss */
+  #masthead .trigger-menu {
+    display: block;
+    width: 80%;
+  }
+  /* line 333, sass/responsive/_responsive.scss */
+  #masthead #mainnav {
+    display: none;
+    margin-top: 20px;
+  }
+  /* line 336, sass/responsive/_responsive.scss */
+  #masthead #mainnav .menu {
+    width: 100%;
+    margin: 0 auto;
+  }
+  /* line 339, sass/responsive/_responsive.scss */
+  #masthead #mainnav .menu li {
+    display: block;
+  }
+  /* line 342, sass/responsive/_responsive.scss */
+  #masthead #mainnav .menu .sub-menu {
+    width: 90%;
+  }
+
+  /* line 351, sass/responsive/_responsive.scss */
+  #main .prolog {
+    font-size: 10px;
+  }
+  /* line 354, sass/responsive/_responsive.scss */
+  #main #slides {
+    width: 320px;
+  }
+  /* line 357, sass/responsive/_responsive.scss */
+  #main .slides_container {
+    width: 190px;
+  }
+  /* line 360, sass/responsive/_responsive.scss */
+  #main .feat-wrapper .feat {
+    width: 250px;
+  }
+  /* line 362, sass/responsive/_responsive.scss */
+  #main .feat-wrapper .feat img {
+    width: 250px;
+  }
+
+  /* line 371, sass/responsive/_responsive.scss */
+  .menu-link {
+    display: block;
+  }
+
+  /* line 379, sass/responsive/_responsive.scss */
+  .foothome {
+    display: none;
+  }
+
+  /* line 382, sass/responsive/_responsive.scss */
+  .footapolo {
+    display: none;
+  }
+
+  /* line 387, sass/responsive/_responsive.scss */
+  .page-product .item {
+    margin-left: 75px;
+  }
+
+  /* line 393, sass/responsive/_responsive.scss */
+  .produkimg .slides_container div.slide {
+    width: auto;
+    margin-left: -120px;
+  }
+  /* line 397, sass/responsive/_responsive.scss */
+  .produkimg .item {
+    width: 0;
+  }
+
+  /* line 401, sass/responsive/_responsive.scss */
+  .produktxt p {
+    width: 280px;
+  }
+
+  /* line 405, sass/responsive/_responsive.scss */
+  .cart .button {
+    width: 234px;
+    margin-left: 0;
+    display: block;
+    float: none;
+    margin-bottom: 20px;
+  }
+
+  /* line 418, sass/responsive/_responsive.scss */
+  .checkout-button {
+    margin-top: 20px !important;
+    float: none;
+    display: block;
+  }
+
+  /* line 428, sass/responsive/_responsive.scss */
+  .woocommerce-cart .cart .product-remove {
+    display: none;
+  }
+
+  /* line 431, sass/responsive/_responsive.scss */
+  .product-thumbnail {
+    display: none;
+  }
+
+  /* line 434, sass/responsive/_responsive.scss */
+  .product-quantity {
+    display: none;
+  }
+
+  /* line 437, sass/responsive/_responsive.scss */
+  .minus {
+    display: none;
+  }
+
+  /* line 440, sass/responsive/_responsive.scss */
+  .product-name {
+    text-align: center;
+    width: 80px;
+  }
+
+  /* line 444, sass/responsive/_responsive.scss */
+  .product-price {
+    text-align: center;
+    width: 60px;
+  }
+
+  /* line 448, sass/responsive/_responsive.scss */
+  .product-subtotal {
+    width: 60px;
+    text-align: center;
+  }
+}

@@ -20,7 +20,6 @@ get_header();
 <div class="site-main" id="main">
 	<?php get_template_part( 'contents', 'slider' ); ?>
 	<div class="prolog"><?php echo of_get_option( 'balitawoo_prolog_message' ); ?> <a class="btn2" href="<?php echo of_get_option( 'balitawoo_prolog_link' ); ?>"><?php echo of_get_option( 'balitawoo_prolog_button' ); ?></a></div><!-- prolog -->
-	<?php get_sidebar('shop'); ?>
 	<div class="content-area" id="primary">
 		<div id="content" class="site-content">
 			<?php
@@ -61,12 +60,14 @@ get_header();
 				for ($counter = 1; $counter <= 4; $counter++) :
 					if ( of_get_option('balitawoo_banner'.$counter.'_image') != '' && of_get_option('balitawoo_banner'.$counter.'_text') != '' && of_get_option('balitawoo_banner'.$counter.'_text') != '' ) :
 			?>
+				<div class="feat-wrapper">
 					<div class="feat">
 						<img src="<?php echo of_get_option('balitawoo_banner'.$counter.'_image'); ?>"></a>
 						<h3><a href="<?php echo of_get_option('balitawoo_banner'.$counter.'_link'); ?>"><?php echo of_get_option('balitawoo_banner'.$counter.'_title'); ?></a></h4>
 						<p><?php echo of_get_option('balitawoo_banner'.$counter.'_text'); ?></p>
 						<a class="brs" href="<?php echo of_get_option('balitawoo_banner'.$counter.'_link'); ?>">Browse</a>
 					</div>
+				</div>
 			<?php 	endif;
 				endfor; ?>
 			<div class="clear"></div>

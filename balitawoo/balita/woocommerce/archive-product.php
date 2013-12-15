@@ -23,10 +23,10 @@ get_header('shop');
 
 		<?php do_action( 'woocommerce_archive_description' ); ?>
 
-	<div class="content-area no-sidebar" id="primary">
+	<div class="content-area <?php tokokoo_dynamic_sidebar_class(); ?>" id="primary">
 		<div id="content" class="site-content page-product">
 			<?php woocommerce_breadcrumb(); ?>
-			<?php if ( have_posts() ) : ?> 
+			<?php if ( have_posts() ) : ?>
 
 				<?php
 					/**
@@ -61,21 +61,25 @@ get_header('shop');
 
 
 			<div class="clear"></div>
-					<?php
-						/**
-						 * woocommerce_after_shop_loop hook
-						 *
-						 * @hooked woocommerce_pagination - 10
-						 */
-						do_action( 'woocommerce_after_shop_loop' );
-					?>
-		</div>
-	</div>
+			<?php
+				/**
+				 * woocommerce_after_shop_loop hook
+				 *
+				 * @hooked woocommerce_pagination - 10
+				 */
+				do_action( 'woocommerce_after_shop_loop' );
+			?>
 		<?php elseif ( ! woocommerce_product_subcategories( array( 'before' => woocommerce_product_loop_start( false ), 'after' => woocommerce_product_loop_end( false ) ) ) ) : ?>
 
 		<?php woocommerce_get_template( 'loop/no-products-found.php' ); ?>
 
 		<?php endif; ?>
+
+		</div>
+	</div>
+
+	<?php get_template_part( 'sidebar', 'shop' ); ?>
+	
 		<?php
 			/**
 			 * woocommerce_after_main_content hook
@@ -84,6 +88,6 @@ get_header('shop');
 			 */
 			do_action('woocommerce_after_main_content');
 		?>
-
+	
 
 <?php get_footer('shop'); ?>

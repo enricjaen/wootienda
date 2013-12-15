@@ -1,7 +1,14 @@
 var $ = jQuery.noConflict();
 $(document).ready(function(){
 
-	$(".widget-tags a, .tagcloud a").removeAttr("style");
+
+
+	$('#mainnav').before('<div class="trigger-menu">MENU</div>');
+
+	$(".trigger-menu").click(function(event) {
+		$("#mainnav").slideToggle(400);
+		/* Act on the event */
+	});
 
 
 	// $("#mainnav ul.menu > li:nth-child(1)").addClass("use-ico-home");
@@ -10,12 +17,16 @@ $(document).ready(function(){
 	// $("#mainnav ul.menu > li:nth-child(4)").addClass("use-ico-gifts");
 
 
+
+
 	$(".menu ul.sub-menu").hover(function() {
 		$(this).parent().addClass("runing");
 	}, function() {
 		$(this).parent().removeClass("runing");
 		// Stuff to do when the mouse leaves the element;
 	});
+
+
 
 
 	$(".cartbox .cartbox-top").click(function() {
