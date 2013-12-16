@@ -136,4 +136,25 @@ if ( class_exists( 'woocommerce' ) ) {
 			$div = '</div><div class="slide">';
 		return $div.'<div class="item">'.$html.'</div>';
 	}
+
+	// Ensure cart contents update when products are added to the cart via AJAX (place the following in functions.php)
+	add_filter('add_to_cart_fragments', 'tokokoo_header_add_to_cart_fragment');
+	function tokokoo_header_add_to_cart_fragment( $fragments ) {
+		global $woocommerce;
+		
+		ob_start();
+		
+		?>
+
+			<p class="stat">
+				<?php echo sprintf(_n('%d Item', '%d Items', $woocommerce->cart->cart_contents_count, 'tokokoo'), $woocommerce->cart->cart_contents_count);?> <span>|</span> <?php echo $woocommerce->cart->get_cart_subtotal(); ?>
+			</p>
+		
+		<?php
+		
+		$fragments['.cartbox-top p.stat'] = ob_get_clean();
+		
+		return $fragments;
+		
+	}
 }

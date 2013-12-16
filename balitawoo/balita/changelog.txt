@@ -1,3 +1,6 @@
+2013-11-25 - 1.2.2
+  - Fix cart item count on header
+
 2013-11-22 - 1.2.1
   - Show Product Meta on Single Product (SKU, Category, Tags)
   - Add sidebar support to Product page
