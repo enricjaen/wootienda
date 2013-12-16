@@ -1,0 +1,19 @@
+figure > img{
+    display:block;
+}
+
+img {
+	height: auto;
+}
+
+img[class*="align"],
+img[class*="attachment-"] {
+	height: auto;
+}
+
+embed,
+iframe,
+object {
+	max-width: 100%;
+	width: 100%; 
+}
