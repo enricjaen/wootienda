@@ -1,0 +1,24 @@
+<!-- Build for weboshot. Pretty much the only purpose is to deploy the apache 
+    htdocs as defined in build.properties -->
+<project name="tienda" default="deploy" basedir=".">
+ 
+ <property file="build.properties"></property>
+ 
+ <target name="deploy">
+ 
+     <!--delete dir="${full.deploy.path}"></delete-->
+ 
+     <copy todir="${full.deploy.path}">
+ 
+         <fileset dir=".">
+             <exclude name="**/test/**"></exclude>
+         	<exclude name=".settings"/>
+         	<exclude name="build.xml"/>
+         	<exclude name="build.properties"/>
+         </fileset>
+ 
+     </copy>
+ 
+ </target>
+ 
+</project>

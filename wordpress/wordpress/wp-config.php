@@ -81,6 +81,21 @@ define('WPLANG', '');
  */
 define('WP_DEBUG', false);
 
+define('WP_DEBUG_LOG', false);
+
+if(!function_exists('_log')){
+	function _log( $message ) {
+		if( WP_DEBUG === true ){
+			if( is_array( $message ) || is_object( $message ) ){
+				error_log( print_r( $message, true ) );
+			} else {
+				error_log( $message );
+			}
+		}
+	}
+}
+
+
 /* That's all, stop editing! Happy blogging. */
 /**
  * The WP_SITEURL and WP_HOME options are configured to access from any hostname or IP address.
