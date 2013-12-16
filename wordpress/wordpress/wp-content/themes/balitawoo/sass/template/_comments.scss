@@ -1,0 +1,127 @@
+
+
+#respond{
+	#reply-title{
+		margin-left: 40px;
+	}
+	form{
+		position: relative;
+	}
+	p{
+		margin: 0;
+	}
+
+	textarea#comment{
+		position: absolute;
+		width: 340px;
+		height: 140px;
+		top: 0;
+		right: 0;
+	}
+
+	.form-submit{
+		input[type="submit"]{
+			@include float(right);
+			width: 160px;
+			text-align: center;
+			padding: 6px 0;
+		}
+	}
+}
+
+
+
+.pp_inline{
+  #respond{
+    #reply-title{
+      margin-left: 0;
+      margin-bottom: 12px;
+    }
+
+    .comment-form-comment{
+      label{
+        display: block;
+      }
+    }
+
+    textarea#comment{
+      position: static;
+      width: 100%;
+    }
+
+    .form-submit input[type="submit"]{
+      margin-top: 10px;
+    }
+
+    label{
+    	display: block;
+    }
+
+    p{
+    	position: relative;
+    }
+
+	.required {
+		bottom: 0;
+		color: red;
+		left: 236px;
+		position: absolute;
+		top: 20px;
+	}
+
+
+
+
+  }
+}
+
+.contact-form{
+	@include clearfix;
+	padding: 30px;
+	.wpcf7-form-control-wrap{
+		display: block;
+		margin-top: 4px;
+	}
+	.wpcf7{
+		p{
+			margin-bottom: 6px;
+		}
+		form{
+			padding: 0;
+			margin-left: 0;
+			margin-right: 0;
+			textarea{
+				float: none;
+				width: 100%;
+				border: 1px solid #fff;
+				&:focus{
+					border: 1px silid #ccc;
+				}
+			}
+			.wpcf7-text{
+				border: 1px solid #fff;
+				@include border-radius(0);
+				width: 280px;
+				&:focus{
+					border: 1px solid #ccc;
+				}
+			}
+			.wpcf7-submit{
+				border: 0px;
+				color: #fff;
+				background-color: #a8af3f;
+				border-radius: 4px;
+				padding: 0 15px;
+				font: normal 700 11px/30px 'Montserrat', Arial, Helvetica, sans-serif;
+				text-transform: uppercase;
+				margin: 0;
+				// height: 30px;
+				padding: 8px 12px;
+				width: 120px;
+				&:hover{
+					background-color: #bcc351;				}
+			}
+		}
+		
+	}
+}

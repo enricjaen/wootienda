@@ -30,7 +30,6 @@
 		
 		<div id="container">
 			<header id="masthead" class="site-header" role="banner">
-
 			<h1 id="logo">
 				<!-- <a href="<?php echo home_url( ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/logo_newbalita.png" width="256" height="85"></a> -->
 				<?php if ( of_get_option('balitawoo_custom_logo') ): ?>
@@ -40,34 +39,28 @@
 				<?php endif; ?>
 			</h1>
 			<!-- logo -->
-<div style="float:right">
-			<?php if (function_exists('qtrans_generateLanguageSelectCode')) { echo qtrans_generateLanguageSelectCode('image'); } ?>
-
 			<div id="loginsearch">
 				<p class="loginmenu">
 					<?php if ( ! is_user_logged_in() ) { ?>
 
-						<a href="<?php echo wp_login_url( home_url() ); ?>"><?php _e( 'Login', 'balitawoo' ); ?></a><span>|</span>
-						<a href="<?php echo site_url( 'wp-login.php?action=register' ); ?>"><?php _e( 'Register', 'balitawoo' ); ?></a>
+						<a href="<?php echo wp_login_url( home_url() ); ?>"><?php _e( 'Login', 'tokokoo' ); ?></a><span>|</span>
+						<a href="<?php echo site_url( 'wp-login.php?action=register' ); ?>"><?php _e( 'Register', 'tokokoo' ); ?></a>
 
 					<?php } else { ?>
 
-						<a href="<?php echo get_permalink( woocommerce_get_page_id( 'myaccount' ) ); ?>"><?php _e( 'My Account', 'balitawoo' ); ?></a><span>|</span>
-						<a href="<?php echo wp_logout_url( home_url() ); ?>"><?php _e( 'Logout', 'balitawoo' ); ?></a>
+						<a href="<?php echo get_permalink( woocommerce_get_page_id( 'myaccount' ) ); ?>"><?php _e( 'My Account', 'tokokoo' ); ?></a><span>|</span>
+						<a href="<?php echo wp_logout_url( home_url() ); ?>"><?php _e( 'Logout', 'tokokoo' ); ?></a>
 
 					<?php } ?> 
 				</p>
 				<?php get_template_part( 'searchform' ); ?>
 			</div>
-</div>
 			<div class="clear">
 			</div>
 			<?php
 		 		get_template_part( 'menu', 'primary' );
 		 	?>
 		 	<?php if ( function_exists( 'balitawoo_your_cart_url' ) ) balitawoo_your_cart_url(); ?>
-
-
 			</header>
 		<div id="main" class="site-main cl">
 	<?php //echo do_shortcode( '[koo-slides id="14"]' ); ?>

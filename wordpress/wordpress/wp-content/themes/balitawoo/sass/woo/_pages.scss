@@ -1,0 +1,246 @@
+.woocommerce-checkout,
+.woocommerce-account{
+
+	.woocommerce-breadcrumb{
+		margin-top: 50px;
+		@include fz(10);
+		color: #cbb8b0;
+
+		a{
+			color: #a18477;
+
+			&:link{
+				color: #a18477;
+			}
+		}
+	}
+	#main{
+		.login,
+		.lost_reset_password{
+			.form-row{
+				display: block;
+				input{
+					min-width: 200px;
+					line-height: 14px;
+				}
+				a{
+					min-width: 200px;
+					display: block;
+				}
+			}
+		}
+
+		.form-row{
+			label{
+				@include float(left);
+				width: 200px;
+
+			}
+			select,
+			input[type="text"]{
+				min-width: 260px;
+				line-height: 14px;
+			}
+
+			input#username{
+
+				min-width: 200px;
+
+
+			}
+
+			option{
+				color: #999;
+			}
+			a{
+				&:link{
+					color: #444;
+				}
+			}
+		}
+
+		.form-row-first{
+			// @include float(left);
+			// width: 40%;
+		}
+
+		#billing_address_2{
+			position: relative;
+			left: 200px;
+		}
+
+		.col2-set{
+			@include clearfix;
+		}
+
+		.col-1, .col-2{
+			@include float(left);
+			width: 45%;
+		}
+
+		.col-2{
+			@include float(right);
+			position: relative;
+		}
+
+		a{
+			color: #a18477;
+
+			&:link{
+				color: #a18477;
+			}
+		}
+
+		h1.title{
+			color: $headingcolor;
+			@include fz(30);
+			margin-bottom: 6px;
+		}
+
+		h2{
+			@include fz(24);
+			color: $headingcolor;
+			margin-bottom: 6px;
+			background: url("img/heading-bg.png") no-repeat 0 0;
+			padding-left: 12px;
+			margin-bottom: .5em;
+			margin-top: 1em;
+
+
+		}
+		h3, h4{
+			@include fz(18);
+			color: $headingcolor;
+			margin-bottom: 6px;
+			background: url("img/heading-bg.png") no-repeat 0 -94px;
+			padding-left: 12px;
+			margin-bottom: .5em;
+			margin-top: 1em;
+
+		}
+	}
+	.lost_password,
+	.button{
+		  background-color: #898F2A;
+		  border: 0 none;
+		  border-radius: 4px 4px 4px 4px;
+		  color: #FFFFFF;
+		  display: inline-block;
+		  font: 700 11px/30px 'Montserrat',Arial,Helvetica,sans-serif;
+		  line-height: 14px;
+		  letter-spacing: 1px;
+		  padding: 12px 18px;
+		  text-align: center;
+		  text-transform: uppercase;
+		  &:hover{
+		  	background-color: #d0d767;
+		  }
+
+		&.lost_password{
+			color: #fff!important;
+			padding: 4px 0;
+			max-width: 200px;
+			margin-top: 10px;
+			display: none;
+			color: #fff;
+			&:link{
+				color: #fff;
+
+			}
+		}
+
+
+	}
+
+
+}
+
+
+tr.cart-subtotal,
+tr.shipping{
+	th{
+		text-align: right;
+	}
+}
+
+tr.total {
+	background-color: inherit;
+	@include border-radius(0);
+	color: inherit;
+	display: table-row;
+	line-height: inherit;
+	margin: inherit;
+	padding: inherit;
+	td{
+		strong{
+			float: none;
+		}
+	}
+}
+
+#payment{
+	ul{
+		@include reset-list;
+		padding: 12px 0;
+		// & > li{
+		// 	padding: 10px 0 0 0;
+		// }
+	}
+}
+
+
+.order-actions{
+	a.view{
+
+		background-color: transparent;
+		&:hover{
+			background-color: transparent;
+
+		}
+
+	}
+}
+
+.order_details{
+	@include reset-list;
+	li{
+		margin-bottom: 8px;
+	}
+	li.total {
+		background-color: inherit;
+		@include border-radius(0);
+		color: inherit;
+		// display: table-row;
+		line-height: inherit;
+		// margin: inherit;
+		padding: inherit;
+		margin-top: 0;
+		margin-left: 0;
+		margin-right: 0;
+		margin-bottom: 8px;
+			strong{
+				float: none;
+		}
+	}
+}
+
+
+
+.show_review_form{
+	background-color: #898F2A;
+	border: 0 none;
+	border-radius: 4px 4px 4px 4px;
+	display: inline-block;
+	font: 700 11px/14px 'Montserrat',Arial,Helvetica,sans-serif;
+	letter-spacing: 1px;
+	margin: 10px 0;
+	text-align: center;
+	text-transform: uppercase;
+	width: 230px;
+	color: #fff;
+	padding: 8px 0;
+	  &:hover{
+	  	color: #fff;
+	  	background-color: #d0d767;
+	  }
+}

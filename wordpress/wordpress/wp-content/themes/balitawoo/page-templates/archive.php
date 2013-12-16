@@ -15,15 +15,15 @@ if ( !defined('ABSPATH')) exit;
  */
 	// Loads the header.php template.
 	get_header();
-	query_posts('post_type=post');
+	//query_posts('post_type=post');
 ?>
 
 	<div class="content-area has-sidebar" id="primary">
 		<!-- Kalo ada sidebarnya tambahin class .has-sidebar -->
 		<div id="content" class="site-content page-archive">
 			<?php get_template_part( 'breadcrumbs' ); ?>
-			<h2>Archive</h2>
-			<h3>The last <?php echo get_option( 'posts_per_page' ); ?> posts</h3>
+			<h2><?php _e('Archive','tokokoo') ?></h2>
+			<h3><?php _e('The last','tokokoo'); ?> <?php echo get_option( 'posts_per_page' ); ?> <?php _e('posts','tokokoo'); ?></h3>
 			
 			<?php if ( have_posts() ) : ?>
 				<ul>
@@ -52,7 +52,7 @@ if ( !defined('ABSPATH')) exit;
 				$categories = get_categories( $args );
 			?>
 			<div class="col">
-				<h3>Categories</h3>
+				<h3><?php _e( 'Categories', 'tokokoo' ); ?></h3>
 				<ul>
 					<?php foreach( $categories as $category ) { ?>
 					<li><a href="<?php echo home_url( '/category/'.$category->slug ); ?>"><?php echo $category->cat_name; ?></a> (<?php echo $category->count; ?>)</li>
@@ -72,7 +72,7 @@ if ( !defined('ABSPATH')) exit;
 
 			?>
 			<div class="col col2">
-				<h3>Monthly Archive</h3>
+				<h3><?php _e('Monthly Archive','tokokoo'); ?></h3>
 				<ul>
 					<?php wp_get_archives( $args ); ?>
 				</ul>

@@ -29,10 +29,10 @@ if ( !defined('ABSPATH')) exit;
 				$lon = ( preg_match('~(\+|\-)[\d\.]+~', $lon) ) ? $lon : '+'.$lon;
 				$lat_lon = urlencode($lat.$lon);
 			?>
-			<div style="width:770px;height:400px">
+			<div>
 				<iframe width="770" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=<?php echo $lat_lon; ?>&ie=UTF8&z=16&t=m&iwloc=addr&output=embed"></iframe><br>
 				<small>
-					<a href="http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=<?php echo $lat_lon; ?>&ie=UTF8&z=16&t=m&iwloc=addr" target="_blank">View Larger Map</a>
+					<a href="http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=<?php echo $lat_lon; ?>&ie=UTF8&z=16&t=m&iwloc=addr" target="_blank"><?php _e('View Larger Map','tokokoo'); ?></a>
 				</small>
 			</div>
 				<div class="clear"></div>

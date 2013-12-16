@@ -1,6 +1,16 @@
-2013-11-06 - 1.2
+2013-11-25 - 1.2.2
+  - Fix cart item count on header
+
+2013-11-22 - 1.2.1
+  - Show Product Meta on Single Product (SKU, Category, Tags)
+  - Add sidebar support to Product page
+  - Fix product page layout
+  - Fix text domain translation
+  - Fix Upsell, Related, And Cross Sells product
+
+2013-11-12 - 1.2
   - Add responsive support
-  
+
 2013-09-20 - 1.1.1
   - Update the screenshot
   - Fixing author box

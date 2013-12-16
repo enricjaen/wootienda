@@ -12,6 +12,7 @@
 		?>
 		<?php if ( '' != $facebook || '' != $twitter || '' != $flickr ): ?>
 		<section class="socmed widget">
+		
 			<h3><?php echo $socmed_title; ?></h3>
 			<ul>
 				<?php echo $twitter; ?>
@@ -35,7 +36,7 @@
 				<img src="<?php echo get_template_directory_uri(); ?>/img/ico_pay.png" width="155" height="22">
 				<?php if ( !of_get_option('tokokoo_credits') ): ?>
 				<p>
-					&copy; 2013 Balita All Rights Reserved. Balita Theme By Tokokoo
+					<?php tokokoo_footer_text(); ?>
 				</p>
 				<?php endif; ?>
 			</div>

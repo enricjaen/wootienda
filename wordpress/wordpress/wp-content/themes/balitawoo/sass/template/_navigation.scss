@@ -1,0 +1,205 @@
+
+
+.menu{
+	@include reset-list;
+	width: 870px;
+	text-align: left;
+	margin-top: 40px;
+
+	li[class*="use-ico"]{
+		& > a{
+			padding-left: 34px;
+			background-repeat: no-repeat;
+			background-position: 8px center;
+		}
+	}
+
+	.use-ico-home{
+		& > a{
+			background-image: url("img/ico-home.png");
+		}
+
+	}
+	.use-ico-clothes{
+		& > a{
+			background-image: url("img/ico-cloth.png");
+		}
+	}
+	.use-ico-gears{
+		& > a{
+			background-image: url("img/ico-gears.png");
+		}
+
+	}
+	.use-ico-gifts{
+		& > a{
+			background-image: url("img/ico-gift.png");
+		}
+	}
+
+
+	ul{
+		@include reset-list;
+	}
+
+
+
+	li{
+		font: normal 700 13px/40px 'Montserrat', Arial, Helvetica, sans-serif;
+		@include inline-block;
+		text-transform: uppercase;
+		border-left: 1px solid #703624;
+		&.current-menu-item ,
+		&.runing{
+			a{
+			border-radius: 4px 4px 0 0;
+			background-color: #a8af3f;
+			color: #fff;
+			}
+		}
+
+		a{
+			display: block;
+			margin: 0 12px;
+			color: #d6a293;
+			padding: 0 20px;
+			display: block;
+			&:hover{
+				border-radius: 4px 4px 0 0;
+				background-color: #a8af3f;
+				color: #fff;
+				border-left-color: transparent;
+			}
+		}
+
+		&:hover{
+			a{
+				color: #fff;
+			}
+
+			.sub-menu{
+				display: block;
+				.sub-menu{
+					display: none;
+				}
+				li{
+					&:hover{
+
+						.sub-menu{
+							display: block;
+						}
+
+					}
+				}
+			}
+
+		}
+	}
+
+
+	.sub-menu{
+		background-color: #a8af3f;
+		position: absolute;
+		width: 210px;
+		z-index: 100;
+		display: none;
+		margin-left: 12px;
+		li{
+			display: block;
+			border-left-width: 0;
+			margin: 6px 0;
+
+			a{
+				color: #fff;
+				border-left-width: 0;
+				padding: 0;
+				line-height: 28px;
+				margin: 0;
+				padding-left: 14px;
+				display: block;
+				&:hover{
+					background-color: #bcc351;
+					// background-color: #bcc351;
+					@include border-radius(0);
+
+				}
+			}
+
+			.sub-menu{
+				margin-left: 100px;
+				margin-top: -20px;
+			}
+		}
+	}
+}
+
+// .menu {
+// 	float: left;
+// 	margin: 9px 0 0 0;
+// 	width: 690px;
+// 	list-style: none;
+// 	text-transform: uppercase;
+// 	position: absolute;
+// }
+// .menu li {
+// 	float: left;
+// 	position: relative;
+// 	font: normal 700 13px/40px 'Montserrat', Arial, Helvetica, sans-serif;
+// 	display: block;
+// 	border-right: 1px solid #703624;
+// }
+// .menu li a{
+// 	color: #d6a293;
+// 	padding: 0 20px;
+// 	display: inline-block;
+// 	border-radius: 4px 4px 0 0;
+// }
+// .menu li a.on,
+// .menu li a:hover,
+// .menu li:hover a{
+// 	color: #fff;
+// 	background-color: #a8af3f;
+// }
+// .menu li a.on:hover{
+// 	background-color: #bcc351;
+// }
+// .menu li .mn{
+// 	background: url(img/ico_menu4.png) no-repeat 20px 10px;
+// 	padding-left: 45px;
+// }
+// .menu li .mn2{
+// 	background: url(img/ico_menu3.png) no-repeat 20px 10px;
+// }
+// .menu li .mn3{
+// 	background: url(img/ico_menu2.png) no-repeat 20px 10px;
+// }
+// .menu li .mn4{
+// 	background: url(img/ico_menu1.png) no-repeat 20px 10px;
+// }
+// .menu li ul{
+// 	display: none;
+// }
+// .menu li:hover ul{
+// 	display: block;
+// }
+// .dropdown{
+// 	background-color: #a8af3f;
+// 	position: absolute;
+// 	width: 210px;
+// 	display: block;
+// 	z-index: 100;
+// }
+// .menu .dropdown li{
+// 	float: none;
+// 	border: 0px;
+// 	display: block;
+// 	padding: 0px;
+// }
+// .menu .dropdown li a{
+// 	color: #fff;
+// 	border-radius: 0px;
+// 	display: block;
+// }
+// .menu .dropdown li a:hover{
+// 	background-color: #bcc351;
+// }

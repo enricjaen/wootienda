@@ -1,0 +1,73 @@
+// .pagination{
+// 	color: #b2a48f;
+// 	text-align: center;
+// 	margin: 30px 0;
+// }
+// .pagination div a{
+// 	color: #b2a48f;
+// 	margin: 0 5px;
+// 	padding: 4px 8px;
+// 	border-radius: 5px;
+// }
+// .pagination div a:hover,
+// .pagination div .on{
+// 	color: #e56c69;
+// 	background-color: #f5f5f5;
+// }
+
+
+
+.pagination{
+	color: #b2a48f;
+	text-align: center;
+	margin: 30px 0;
+	text-align: center;
+
+	.page-numbers{
+		text-align: center;
+		padding: 4px 8px;
+		margin-left: 8px;
+		position: relative;
+		&:before{
+			position: absolute;
+			content: "/";
+
+			left: -9px;
+		}
+	}
+
+	a{
+		&:hover{
+			background-color: #F5F5F5;
+		}
+	}
+
+	.prev, .next{
+		display: block;
+		background: url(img/nav_24.png) no-repeat left top;	
+		float: left;
+		padding: 0;
+		text-indent: 100%;
+		white-space: nowrap;
+		overflow: hidden;
+		height: 20px;
+		width: 20px;
+		margin: 0;
+		&:before{
+			display: none;
+		}
+	}
+
+	.prev:hover{
+		background: url(img/nav_24.png) no-repeat left bottom;
+	}
+	.next{
+		background: url(img/nav_24.png) no-repeat right top;	
+		float: right;
+	}
+	.next:hover{
+		background: url(img/nav_24.png) no-repeat right bottom;	
+	}
+
+
+}

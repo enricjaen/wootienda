@@ -32,7 +32,7 @@ if ( class_exists( 'woocommerce' ) ) {
 			<div class="cartbox">
 				<div class="cartbox-top">
 					<span class="this-arrow">arrow</span>
-					<h3>Shopping Cart</h3>
+					<h3><?php _e('Shopping Cart','tokokoo') ?></h3>
 					<p class="stat">
 						<?php echo sprintf(_n('%d Item', '%d Items', $woocommerce->cart->cart_contents_count, 'tokokoo'), $woocommerce->cart->cart_contents_count);?> <span>|</span> <?php echo $woocommerce->cart->get_cart_subtotal(); ?>
 					</p>
@@ -135,5 +135,26 @@ if ( class_exists( 'woocommerce' ) ) {
 		if( 0 == $loop%4 )
 			$div = '</div><div class="slide">';
 		return $div.'<div class="item">'.$html.'</div>';
+	}
+
+	// Ensure cart contents update when products are added to the cart via AJAX (place the following in functions.php)
+	add_filter('add_to_cart_fragments', 'tokokoo_header_add_to_cart_fragment');
+	function tokokoo_header_add_to_cart_fragment( $fragments ) {
+		global $woocommerce;
+		
+		ob_start();
+		
+		?>
+
+			<p class="stat">
+				<?php echo sprintf(_n('%d Item', '%d Items', $woocommerce->cart->cart_contents_count, 'tokokoo'), $woocommerce->cart->cart_contents_count);?> <span>|</span> <?php echo $woocommerce->cart->get_cart_subtotal(); ?>
+			</p>
+		
+		<?php
+		
+		$fragments['.cartbox-top p.stat'] = ob_get_clean();
+		
+		return $fragments;
+		
 	}
 }

@@ -34,18 +34,6 @@ function tokokoo_register_extra_sidebars() {
 			)
 		);
 
-		register_sidebar(
-			array(
-				'id' => 'cart',
-				'name' => __( 'Cart', 'tokokoo' ),
-				'description' => __( 'The widget area loaded on the cart page.', 'tokokoo' ),
-				'before_widget' => '<section id="%1$s" class="widget %2$s widget-%2$s"><div class="widget-wrap widget-inside">',
-				'after_widget'  => '</div></section>',
-				'before_title'  => '<h3 class="widget-title">',
-				'after_title'   => '</h3>'
-			)
-		);
-				
 	}
 
 }

@@ -48,7 +48,7 @@ get_header();
 				  $nonce = wp_create_nonce("ajaxify_load_post_nonce");
 				  $link = admin_url('admin-ajax.php?action=ajaxify_load_post&page=2&nonce='.$nonce);
 				?>
-				<div class="loadmore" ><a data-nonce="<?php echo $nonce; ?>" data-page="2" href="<?php echo $link; ?>">Load More Posts</a></div>
+				<div class="loadmore" ><a data-nonce="<?php echo $nonce; ?>" data-page="2" href="<?php echo $link; ?>"><?php _e('Load More Posts','tokokoo') ?></a></div>
 
 			<?php elseif ( current_user_can( 'edit_posts' ) ) : ?>
 

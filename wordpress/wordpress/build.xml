@@ -8,7 +8,7 @@
  
      <!--delete dir="${full.deploy.path}"></delete-->
  
-     <copy todir="${full.deploy.path}">
+     <copy todir="${full.deploy.path}" verbose="true">
  
          <fileset dir=".">
              <exclude name="**/test/**"></exclude>
