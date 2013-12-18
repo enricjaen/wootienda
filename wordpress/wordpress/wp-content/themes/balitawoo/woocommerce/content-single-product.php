@@ -13,9 +13,6 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 ?>
 
 
-
-
-
 <div class="content-area has-sidebar" id="primary">
 	<div id="content" class="site-content page-product">
 			<?php woocommerce_breadcrumb(); ?>
@@ -84,4 +81,3 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 </div><!-- #product-<?php the_ID(); ?> -->
 
 <?php do_action( 'woocommerce_after_single_product' ); ?>
-<?php woocommerce_get_sidebar(); ?>

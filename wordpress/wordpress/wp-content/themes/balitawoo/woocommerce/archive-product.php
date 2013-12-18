@@ -12,10 +12,10 @@
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 global $woocommerce_loop;
 $woocommerce_loop['columns'] = 5;
-get_header('shop'); 
+
+get_header('shop');
+
 ?>
-	<?php get_template_part( 'contents', 'slider' ); ?>
-	<div class="prolog"><?php echo of_get_option( 'balitawoo_prolog_message' ); ?> <a class="btn2" href="<?php echo of_get_option( 'balitawoo_prolog_link' ); ?>"><?php echo of_get_option( 'balitawoo_prolog_button' ); ?></a></div><!-- prolog -->
 
 		<?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
 
@@ -23,6 +23,8 @@ get_header('shop');
 
 		<?php do_action( 'woocommerce_archive_description' ); ?>
 
+		<?php get_template_part( 'sidebar', 'shop' ); ?>
+		
 	<div class="content-area <?php tokokoo_dynamic_sidebar_class(); ?>" id="primary">
 		<div id="content" class="site-content page-product">
 			<?php woocommerce_breadcrumb(); ?>
@@ -78,8 +80,6 @@ get_header('shop');
 		</div>
 	</div>
 
-	<?php get_template_part( 'sidebar', 'shop' ); ?>
-	
 		<?php
 			/**
 			 * woocommerce_after_main_content hook

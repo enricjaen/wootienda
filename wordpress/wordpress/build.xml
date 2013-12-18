@@ -4,9 +4,13 @@
  
  <property file="build.properties"></property>
  
+<target name="clean php">
+    <delete dir="${full.deploy.path}/**">
+    	<include name="*.php"/>
+    </delete>
+</target>
+	
  <target name="deploy">
- 
-     <!--delete dir="${full.deploy.path}"></delete-->
  
      <copy todir="${full.deploy.path}" verbose="true">
  
@@ -15,10 +19,28 @@
          	<exclude name=".settings"/>
          	<exclude name="build.xml"/>
          	<exclude name="build.properties"/>
+         	<exclude name=".project"/>
+         	         	
          </fileset>
  
      </copy>
  
  </target>
- 
+
+ <target name="deploy overwrite">
+	 
+	     <copy todir="${full.deploy.path}" overwrite="true">
+	 
+	         <fileset dir=".">
+	             <exclude name="**/test/**"></exclude>
+	         	<exclude name=".settings"/>
+	         	<exclude name="build.xml"/>
+	         	<exclude name="build.properties"/>
+	         </fileset>
+	 
+	     </copy>
+	 
+	 </target>
+	
+	
 </project>

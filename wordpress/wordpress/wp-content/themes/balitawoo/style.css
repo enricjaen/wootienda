@@ -1018,13 +1018,14 @@ input[class*="text"] {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
-  -webkit-border-radius: 3px;
+  /* enric -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
-  border-radius: 3px;
+  border-radius: 3px;  */
   border: 1px solid #dddddd;
   color: #999;
-  height: 2.5em;
+  height: 22px;
   padding: 3px 4px;
+  float: left;
 }
 /* line 62, sass/base/_forms.scss */
 textarea:focus,
@@ -1225,7 +1226,7 @@ body {
 
 /* line 19, sass/template/_all.scss */
 #page {
-  background: url(img/bg_cloud.png) no-repeat center 100px;
+ /* enric background: url(img/bg_cloud.png) no-repeat center 100px;*/
   top: 0;
   bottom: 0;
   left: 0;
@@ -1236,12 +1237,12 @@ body {
 
 /* line 28, sass/template/_all.scss */
 #headbanner {
-  background: url(img/bg_top.png) repeat-x top center;
+  background: url(img/bg-head-banner.png) repeat-x top center;
   display: block;
   text-align: center;
   font: normal 400 12px/45px 'Montserrat', Arial, Helvetica, sans-serif;
   color: #f8d1c1;
-  height: 52px;
+  height: 40px;
   position: relative;
   z-index: 2;
 }
@@ -1257,7 +1258,7 @@ body {
   width: 1170px;
   margin: -10px auto 0 auto;
   background-color: #fff;
-  box-shadow: 0 0 0 1px #97AEBA, 0 0 5px 2px #97AEBA;
+/*  box-shadow: 0 0 0 1px #97AEBA, 0 0 5px 2px #97AEBA;*/
 }
 
 /*------------------------------------*\
@@ -1266,9 +1267,10 @@ body {
 /* line 51, sass/template/_all.scss */
 #masthead {
   display: block;
-  background-color: #491e11;
+  background-color: #352315;
   padding: 10px 0 0 0;
-  min-height: 140px;
+ /* enric min-height: 140px; */
+  height: 135px; 
   position: relative;
 }
 
@@ -1287,10 +1289,13 @@ body {
 
 /* line 67, sass/template/_all.scss */
 .loginmenu {
-  font: normal 700 11px/30px 'Montserrat', Arial, Helvetica, sans-serif;
+/*  font: normal 700 11px 'Montserrat', Arial, Helvetica, sans-serif;*/
+  width: 228px;
   text-transform: uppercase;
   color: #703624;
   float: left;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 10px;
 }
 
 /* line 73, sass/template/_all.scss */
@@ -1318,7 +1323,7 @@ body {
 /* line 87, sass/template/_all.scss */
 #s {
   border: 1px;
-  width: 192px;
+  width: 150px;
 }
 
 /* line 91, sass/template/_all.scss */
@@ -1326,12 +1331,14 @@ body {
   border: 0px;
   color: #fff;
   background-color: #a8af3f;
-  border-radius: 4px;
+  /* enric border-radius: 4px; */
   padding: 0 15px;
-  font: normal 700 11px/30px 'Montserrat', Arial, Helvetica, sans-serif;
+  /*font: normal 700 11px/30px 'Montserrat', Arial, Helvetica, sans-serif;*/
   text-transform: uppercase;
-  margin: 0 0 0 10px;
-  height: 30px;
+  /*enric margin: 0 0 0 10px; */
+  height: 22px;
+  font-size: 10px;
+  font-weight: normal;
 }
 
 /* line 102, sass/template/_all.scss */
@@ -1345,9 +1352,10 @@ body {
 /* line 109, sass/template/_all.scss */
 .cartbox-top {
   position: relative;
-  margin-top: 10px;
-  background: url("img/ico_cart.png") no-repeat scroll 30px 16px #663224;
-  min-height: 90px;
+ /*enric  margin-top: 10px; */
+  background: url("img/icon-shopcart.jpg") no-repeat scroll 30px 0px #663224; /* ver inc/theme-customizer.php*/
+  padding-bottom: 11px;  /*enric*/
+  /*enric min-height: 90px; */
 }
 /* line 115, sass/template/_all.scss */
 .cartbox-top .this-arrow {
@@ -1376,7 +1384,7 @@ body {
   bottom: 0;
   color: #FFFFFF;
   float: right;
-  min-height: 100px;
+/* enric  min-height: 100px;  */
   position: absolute;
   right: 20px;
   width: 280px;
@@ -1512,18 +1520,20 @@ body {
 
 /* line 264, sass/template/_all.scss */
 .cartbox h3 {
-  font: normal 20px ActionManBold, arial helvetica, sans-serif;
-  color: #cbad9c;
-  padding: 20px 0 0 95px;
+  font: normal 18px ActionManBold, arial helvetica, sans-serif;
+  color: #e76e31;
+  padding: 0px 0 0 55px;
   cursor: pointer;
 }
 
 /* line 274, sass/template/_all.scss */
 .cartbox .stat {
-  font: normal 700 11px/30px 'Montserrat', Arial, Helvetica, sans-serif;
+/*  font: normal 700 11px/30px 'Montserrat', Arial, Helvetica, sans-serif; */
   text-transform: uppercase;
-  padding: 0 0 0 95px;
+  padding: 0 0 0 55px;
   margin: 0;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 10px;
 }
 
 /* line 280, sass/template/_all.scss */
@@ -1732,7 +1742,7 @@ body {
   text-align: center;
   color: #fff;
   background-color: #a8af3f;
-  text-transform: uppercase;
+  /* text-transform: uppercase;*/
 }
 
 /* line 450, sass/template/_all.scss */
@@ -2391,9 +2401,8 @@ body {
 
 /* line 925, sass/template/_all.scss */
 .has-sidebar {
-  width: 770px;
+  width: 800px; /*enric*/
   display: block;
-  float: left;
   margin: 20px 0 20px 70px;
 }
 
@@ -2904,8 +2913,8 @@ ul.tabswidget li a {
 
 /* line 1311, sass/template/_all.scss */
 .sidebar section h3 {
-  color: #aba49a;
-  font: bold 11px 'Montserrat', Arial, Helvetica, sans-serif;
+  color: #444;
+  font: bold 13px Helvetica, Helvetica, sans-serif;
   text-transform: uppercase;
   border-bottom: 1px solid #e0d9ce;
   padding: 0 0 20px 0;
@@ -3097,6 +3106,15 @@ ul.tabswidget li a {
 .menu .use-ico-gifts > a {
   background-image: url("img/ico-gift.png");
 }
+
+.menu .use-ico-love > a {
+  background-image: url("img/love.png");
+}
+
+.menu .use-ico-panda > a {
+  background-image: url("img/panda.png");
+}
+
 /* line 41, sass/template/_navigation.scss */
 .menu ul {
   list-style: none;
@@ -3105,7 +3123,10 @@ ul.tabswidget li a {
 }
 /* line 47, sass/template/_navigation.scss */
 .menu li {
-  font: normal 700 13px/40px 'Montserrat', Arial, Helvetica, sans-serif;
+  /*font: normal 500 13px/30px 'Montserrat', Arial, Helvetica, sans-serif;*/
+  font: normal 500 13px/30px 'Montserrat';
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 13px;
   display: -moz-inline-stack;
   -moz-box-orient: vertical;
   display: inline-block;
@@ -3113,32 +3134,35 @@ ul.tabswidget li a {
   vertical-align: top;
   *zoom: 1;
   text-transform: uppercase;
-  border-left: 1px solid #703624;
+  /*border-left: 1px solid #703624;*/
 }
 /* line 54, sass/template/_navigation.scss */
 .menu li.current-menu-item a, .menu li.runing a {
   border-radius: 4px 4px 0 0;
-  background-color: #a8af3f;
-  color: #fff;
+  background-color: #663224;
+  /*color: #fff;*/
 }
 /* line 61, sass/template/_navigation.scss */
 .menu li a {
   display: block;
-  margin: 0 12px;
+/*  margin: 0 12px; */
   color: #d6a293;
   padding: 0 20px;
   display: block;
+  background-image: url(img/bg-border-nav.gif);
+  background-position: left center;
+  background-repeat: no-repeat;
 }
 /* line 67, sass/template/_navigation.scss */
 .menu li a:hover {
   border-radius: 4px 4px 0 0;
-  background-color: #a8af3f;
-  color: #fff;
+ /* background-color: #a8af3f;
+  color: #fff;*/
   border-left-color: transparent;
 }
 /* line 76, sass/template/_navigation.scss */
 .menu li:hover a {
-  color: #fff;
+ /* color: #fff; */
 }
 /* line 80, sass/template/_navigation.scss */
 .menu li:hover .sub-menu {

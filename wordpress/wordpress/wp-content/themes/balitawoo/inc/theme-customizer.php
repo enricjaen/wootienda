@@ -199,7 +199,7 @@
 		<?php } ?>
 	
 		<?php if ( get_theme_mod('balitawoo_secondary_color') ) { ?>
-			.cartbox-top {background: url("<?php echo get_template_directory_uri() ?>/img/ico_cart.png") no-repeat scroll 30px 16px <?php echo get_theme_mod('balitawoo_secondary_color'); ?>;}
+			.cartbox-top {background: url("<?php echo get_template_directory_uri() ?>/img/icon-shopcart.jpg") no-repeat scroll 5px 5px <?php echo get_theme_mod('balitawoo_secondary_color'); ?>;}
 			.cartbox .widget, .woocommerce-cart .cart th, .woocommerce-ordering .chzn-drop .chzn-results li:hover { background-color: <?php echo get_theme_mod('balitawoo_secondary_color'); ?>;}
 		<?php } ?>
 

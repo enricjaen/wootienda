@@ -19,8 +19,6 @@ if(is_product()){
 
 		}elseif(is_checkout()){
 			echo '';
-		}else{
-			echo '<h3>Products</h3>';
-	}
+		}
 
 ?>
