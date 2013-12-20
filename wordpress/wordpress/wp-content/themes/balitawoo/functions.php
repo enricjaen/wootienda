@@ -1,4 +1,41 @@
 <?php
+
+
+// enric - http://wordpress.org/support/topic/plugin-woocommerce-show-empty-product-categories
+add_filter('woocommerce_product_categories_widget_args', 'woocommerce_show_empty_categories');
+function woocommerce_show_empty_categories($cat_args){
+	$cat_args['hide_empty']=0;
+	return $cat_args;
+}
+
+
+function balitawoo_translateURL($url) {
+	return qtrans_convertURL($url,'',false);
+}
+
+function admin_balitawoo_translateURL($url) {
+	return qtrans_convertURL($url,'',true);	
+}
+
+
+add_filter('woocommerce_get_cart_url','admin_balitawoo_translateURL');
+
+add_filter('woocommerce_get_checkout_url','admin_balitawoo_translateURL');
+
+add_filter('woocommerce_minicart_product_url','admin_balitawoo_translateURL');
+
+add_filter('woocommerce_breadcrumb_home_url','balitawoo_translateURL');
+
+function balitawoo_translateCategories($terms) {
+	foreach ($terms as $term) {
+		$term->name=__($term->name,'balitawoo');
+	}
+	return $terms;
+}
+
+add_filter('get_terms', 'balitawoo_translateCategories');
+
+
 /* Load the core theme framework. */
 require_once( trailingslashit( get_template_directory() ) . 'library/hybrid.php' );
 new Hybrid();

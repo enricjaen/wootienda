@@ -24,6 +24,8 @@ jQuery(document).ready(function($) {
 		}
 	};
 
+	$.ajax( $fragment_refresh ); //enric
+
 	if ( $supports_html5_storage ) {
 
 		$('body').bind( 'added_to_cart', function( event, fragments, cart_hash ) {

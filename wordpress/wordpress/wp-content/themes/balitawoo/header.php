@@ -31,15 +31,22 @@
 		<div id="container">
 			<header id="masthead" class="site-header" role="banner">
 			<h1 id="logo">
-				<!-- <a href="<?php echo home_url( ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/logo_newbalita.png" width="256" height="85"></a> -->
 				<?php if ( of_get_option('balitawoo_custom_logo') ): ?>
-					<a href="<?php echo home_url( ); ?>"><img src="<?php echo esc_url( of_get_option('balitawoo_custom_logo') ) ?>" width="256" height="85"></a>
+					<a href="<?php echo qtrans_convertURL(home_url( )); ?>"><img src="<?php echo esc_url( of_get_option('balitawoo_custom_logo') ) ?>" width="256" height="85"></a>
 				<?php else: ?>
 				<a href="<?php bloginfo('url'); ?>"><?php bloginfo( 'name' ); ?></a>
 				<?php endif; ?>
 			</h1>
 			<!-- logo -->
+
+
 			<div id="loginsearch">
+			
+				<?php get_template_part( 'searchform' ); ?> 
+			
+			<?php if (function_exists('qtrans_generateLanguageSelectCode')) { echo qtrans_generateLanguageSelectCode('image'); } ?>
+				
+				
 				<p class="loginmenu">
 					<?php if ( ! is_user_logged_in() ) { ?>
 
@@ -53,8 +60,11 @@
 
 					<?php } ?> 
 				</p>
-				<?php get_template_part( 'searchform' ); ?>
+					
+				
 			</div>
+
+			
 			<div class="clear">
 			</div>
 			<?php

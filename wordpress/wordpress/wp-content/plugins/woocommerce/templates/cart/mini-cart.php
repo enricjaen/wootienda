@@ -35,8 +35,8 @@ global $woocommerce;
 			?>
 
 			<li>
-				<a href="<?php echo get_permalink( $cart_item['product_id'] ); ?>">
-
+				<a href="<?php echo apply_filters('woocommerce_minicart_product_url',get_permalink( $cart_item['product_id'] )); ?>">
+				
 					<?php echo $_product->get_image(); ?>
 
 					<?php echo apply_filters('woocommerce_widget_cart_product_title', $_product->get_title(), $_product ); ?>

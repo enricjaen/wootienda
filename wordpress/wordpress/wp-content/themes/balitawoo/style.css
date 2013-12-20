@@ -864,7 +864,7 @@ address {
 ul,
 ol {
   margin: 1em 0;
-  padding: 0 0 0 1.5;
+  padding: 0.5em 0 0 1.5em;
 }
 
 /* line 148, sass/base/_typography.scss */
@@ -1023,9 +1023,9 @@ input[class*="text"] {
   border-radius: 3px;  */
   border: 1px solid #dddddd;
   color: #999;
-  height: 22px;
+  height: 2em;
   padding: 3px 4px;
-  float: left;
+/*  float: left;*/
 }
 /* line 62, sass/base/_forms.scss */
 textarea:focus,
@@ -1283,14 +1283,15 @@ body {
 
 /* line 63, sass/template/_all.scss */
 #loginsearch {
-  float: right;
-  margin: 15px 20px 0 0;
+/*  float: right;  */
+/*  margin: 15px 20px 0 0;*/
 }
 
 /* line 67, sass/template/_all.scss */
 .loginmenu {
 /*  font: normal 700 11px 'Montserrat', Arial, Helvetica, sans-serif;*/
-  width: 228px;
+  width: 200px;
+  margin: 2em 0;
   text-transform: uppercase;
   color: #703624;
   float: left;
@@ -1317,7 +1318,7 @@ body {
 /* line 83, sass/template/_all.scss */
 #searchform {
   float: right;
-  margin: 0 0 0 20px;
+   margin: 20px 0 0 20px;
 }
 
 /* line 87, sass/template/_all.scss */
@@ -1336,7 +1337,7 @@ body {
   /*font: normal 700 11px/30px 'Montserrat', Arial, Helvetica, sans-serif;*/
   text-transform: uppercase;
   /*enric margin: 0 0 0 10px; */
-  height: 22px;
+  height: 24px;
   font-size: 10px;
   font-weight: normal;
 }
@@ -1354,7 +1355,7 @@ body {
   position: relative;
  /*enric  margin-top: 10px; */
   background: url("img/icon-shopcart.jpg") no-repeat scroll 30px 0px #663224; /* ver inc/theme-customizer.php*/
-  padding-bottom: 11px;  /*enric*/
+  padding-bottom: 13px;  /*enric*/
   /*enric min-height: 90px; */
 }
 /* line 115, sass/template/_all.scss */
@@ -4055,7 +4056,7 @@ ul.tabswidget li a {
   border-width: 0;
   padding: 12px 0;
   text-indent: 8px;
-  width: 340px;
+  width: 240px;
   line-height: 14px;
 }
 /* line 161, sass/woo/_cart.scss */
@@ -4070,7 +4071,7 @@ ul.tabswidget li a {
   -moz-border-radius: 4px;
   border-radius: 4px;
   border-width: 0;
-  padding: 12px 40px;
+  padding: 12px 20px;
   text-align: center;
   letter-spacing: 1;
   -webkit-transition: all 0.4s ease;
@@ -4078,7 +4079,7 @@ ul.tabswidget li a {
   -o-transition: all 0.4s ease;
   transition: all 0.4s ease;
   text-transform: uppercase;
-  min-width: 200px;
+  min-width: 150px;
 }
 /* line 175, sass/woo/_cart.scss */
 .woocommerce-cart .cart .actions input[type="submit"]:hover {
@@ -4133,7 +4134,7 @@ ul.tabswidget li a {
 .shipping_calculator {
   display: inline;
   float: left;
-  width: 400px;
+ /* width: 400px; */
 }
 /* line 229, sass/woo/_cart.scss */
 .shipping_calculator h2 {
@@ -4194,7 +4195,7 @@ ul.tabswidget li a {
 .woocommerce-account #main .form-row label {
   display: inline;
   float: left;
-  width: 200px;
+  width: 300px;
 }
 /* line 40, sass/woo/_pages.scss */
 .woocommerce-checkout #main .form-row select,
@@ -4223,7 +4224,7 @@ ul.tabswidget li a {
 .woocommerce-checkout #main #billing_address_2,
 .woocommerce-account #main #billing_address_2 {
   position: relative;
-  left: 200px;
+/*  left: 200px; */
 }
 /* line 72, sass/woo/_pages.scss */
 .woocommerce-checkout #main .col2-set,
@@ -4270,11 +4271,17 @@ ul.tabswidget li a {
 /* line 94, sass/woo/_pages.scss */
 .woocommerce-checkout #main h1.title,
 .woocommerce-account #main h1.title {
+  color: #663223;
+  font: 30px ActionManBold,arial helvetica,sans-serif;
+  letter-spacing: -1px;
+  margin: 20px 0 30px;
+  /*
   color: #663333;
   font-size: 30px;
   font-size: 1.875rem;
   line-height: 1.6;
   margin-bottom: 6px;
+  */
 }
 /* line 100, sass/woo/_pages.scss */
 .woocommerce-checkout #main h2,

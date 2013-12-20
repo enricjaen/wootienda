@@ -114,7 +114,7 @@ function qtrans_generateLanguageSelectCode($style='', $id='') {
 			foreach(qtrans_getSortedLanguages() as $language) {
 				echo '<li';
 				if($language == $q_config['language'])
-					echo ' class="active"';
+					echo ' class="active"';	
 				echo '><a href="'.qtrans_convertURL($url, $language).'"';
 				echo ' class="qtrans_flag_'.$language.' qtrans_flag_and_text" title="'.$q_config['language_name'][$language].'"';
 				echo '><span>'.$q_config['language_name'][$language].'</span></a></li>';
